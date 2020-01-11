@@ -1,0 +1,141 @@
+@media(min-width:750px)
+{.App{
+  position: absolute;
+  left:150px;
+  bottom:100 px;
+}
+}
+.heading {
+  position: relative;
+  color:rgb(81, 81, 185);
+  padding-left: 125px;
+  padding-top: 20px;
+}
+#people{
+  position: absolute;
+  left: -23px;
+  bottom:3px;
+}
+.head-title{
+   
+  margin-top: 10px;
+  margin-left: -96px;
+}
+#people-title{
+  margin-top: 2px;
+}
+.head{
+  padding-left: 25px;
+}
+.rooms {
+  border: 1px solid black;
+  width:500px;
+  position: relative;
+  margin-top: -17px;
+}
+#bed{
+  position: absolute;
+  bottom:23px ;
+  left:8px;
+  color:rgb(81, 81, 185);
+}
+#room-text{
+  padding-left:50px;
+  color:rgb(81, 81, 185);
+  display: inline-block;
+}
+.room-plus{
+  position: absolute;
+ 
+  left:400px;
+  bottom:30px;
+  color:red;
+}
+#num0{
+  position: absolute;
+  left:360px;
+  top: -4px;
+}
+.room-minus{
+  position: absolute;
+  left:300px;
+  bottom: 29px;
+  color:rgb(81, 81, 185);
+
+}
+.adult{
+  border:1px solid black;
+  width:500px;
+  position: relative;
+
+}
+.minus1{
+  position: absolute;
+  left:300px;
+  bottom:30px;
+  color:rgb(81, 81, 185);
+      
+}
+#num1{
+  position: absolute;
+  left:360px;
+  bottom:12px;
+}
+.plus1{
+    position: absolute;
+    left:400px;
+    bottom:30px;
+    color: red;
+
+}
+#usericon{
+  position: absolute;
+  bottom:23px ;
+  left:8px;
+  color:rgb(81, 81, 185);
+
+}
+#adult-text{
+  padding-left:50px;
+  color:rgb(81, 81, 185);
+  display: inline-block;
+
+}
+.child{
+  border: 1px solid black;
+  width:500px;
+  position: relative;
+
+}
+.minus2{
+  position: absolute;
+  left:300px;
+  bottom:30px;
+  color:rgb(81, 81, 185);    
+}
+#num2{
+  position: absolute;
+  left:360px;
+  bottom:12px;
+}
+.plus2{
+  position: absolute;
+  left:400px;
+  bottom:30px;
+  color: red;
+
+}
+#child-text{
+  padding-left:50px;
+  color:rgb(81, 81, 185);
+  display: inline-block;
+}
+#childicon{
+  position: absolute;
+  bottom:23px ;
+  left:8px;
+  color:rgb(81, 81, 185);
+
+}
+
+
