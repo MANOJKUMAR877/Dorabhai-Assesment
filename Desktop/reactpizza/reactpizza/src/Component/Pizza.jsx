@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPizzaSlice, faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
-function Pizza() {
-    //const [count, setCount] = useState(0);
+const Pizza = (props) => {
+
 
     return (
         <div>
@@ -24,21 +24,21 @@ function Pizza() {
                         <h3 id="large">LARGE</h3>
 
                     </div>
-                    <button id="small-minus" > <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
-                    <button id="small-plus"  ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
-                    <button id="medium-minus"  > <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
-                    <button id="medium-plus"  ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
-                    <button id="large-minus" > <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
-                    <button id="large-plus" ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
-                    <h2><span id="smallvalue">0</span></h2>
-                    <h2><span id="mediumvalue">1</span></h2>
-                    <h2><span id="largevalue">0</span></h2>
-
-</div>
-</div>
+                    <button id="small-minus" onClick={props.smallpizzaDecrement} > <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
+                    <button id="small-plus" onClick={props.smallpizzaIncrement} ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
+                    <button id="medium-minus" onClick={props.mediumpizzaDecrement} > <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
+                    <button id="medium-plus" onClick={props.mediumpizzaIncrement}><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
+                    <button id="large-minus" onClick={props.largepizzaDecrement}> <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
+                    <button id="large-plus" onClick={props.largepizzaIncrement} ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
+                    <h2><span id="smallvalue">{props.smallPizza}</span></h2>
+                    <h2><span id="mediumvalue">{props.mediumPizza}</span></h2>
+                    <h2><span id="largevalue">{props.largePizza}</span></h2>
 
                 </div>
-                );
-            }
-            
+            </div>
+
+        </div>
+    );
+}
+
 export default Pizza;
