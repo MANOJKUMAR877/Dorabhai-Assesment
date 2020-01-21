@@ -18,32 +18,33 @@ function App() {
   let largePizza = largePizzacount
   let adult = adultCount
   let child = childCount
-  let totalamount = totalamountCount
+  let totalAmount = totalamountCount
+
   const smallpizzaDecrement = () => {
-    if (smallPizza > 0 && totalamount >= 350) {
+    if (smallPizza > 0 && totalAmount >= 350) {
       smallPizza = smallPizza - 1
-      totalamount = totalamount - 150
-      setTotalamount(totalamount)
+      totalAmount = totalAmount - 150
+      setTotalamount(totalAmount)
       setSmallpizza(smallPizza)
       child = child - 1
       setChild(child)
     }
   }
   const smallpizzaIncrement = () => {
-    if (totalamount <= 850) {
+    if (totalAmount <= 850) {
       smallPizza = smallPizza + 1;
-      totalamount = totalamount + 150;
-      setTotalamount(totalamount)
+      totalAmount = totalAmount + 150;
+      setTotalamount(totalAmount)
       if (smallPizza >= 2) {
         smallPizza = smallPizza - 2;
         mediumPizza = mediumPizza + 1;
-        totalamount = totalamount - 100;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount - 100;
+        setTotalamount(totalAmount)
         if (mediumPizza >= 2) {
           mediumPizza = mediumPizza - 2;
           largePizza = largePizza + 1;
-          totalamount = totalamount - 100;
-          setTotalamount(totalamount)
+          totalAmount = totalAmount - 100;
+          setTotalamount(totalAmount)
         }
         setMediumpizza(mediumPizza)
       }
@@ -54,11 +55,11 @@ function App() {
     }
   }
   const mediumpizzaDecrement = () => {
-    if (totalamount >= 400 && mediumPizza > 0) {
+    if (totalAmount >= 400 && mediumPizza > 0) {
       mediumPizza = mediumPizza - 1;
       setMediumpizza(mediumPizza)
-      totalamount = totalamount - 200;
-      setTotalamount(totalamount)
+      totalAmount = totalAmount - 200;
+      setTotalamount(totalAmount)
       if (adult >= 1) {
         adult = adult - 1;
       }
@@ -71,15 +72,15 @@ function App() {
     }
   }
   const mediumpizzaIncrement = () => {
-    if (totalamount <= 800) {
-      totalamount = totalamount + 200;
-      setTotalamount(totalamount)
+    if (totalAmount <= 800) {
+      totalAmount = totalAmount + 200;
+      setTotalamount(totalAmount)
       mediumPizza = mediumPizza + 1;
       if (mediumPizza >= 2) {
         mediumPizza = mediumPizza - 2;
         largePizza = largePizza + 1;
-        totalamount = totalamount - 100;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount - 100;
+        setTotalamount(totalAmount)
         setLargepizza(largePizza)
       }
       setMediumpizza(mediumPizza)
@@ -88,10 +89,10 @@ function App() {
     }
   }
   const largepizzaDecrement = () => {
-    if (largePizza > 0 && totalamount >= 500) {
+    if (largePizza > 0 && totalAmount >= 500) {
       largePizza = largePizza - 1;
-      totalamount = totalamount - 300;
-      setTotalamount(totalamount)
+      totalAmount = totalAmount - 300;
+      setTotalamount(totalAmount)
       if (adult === 2) {
         adult = adult - 1;
         child = child - 2;
@@ -108,9 +109,9 @@ function App() {
     }
   }
   const largepizzaIncrement = () => {
-    if (totalamount <= 700) {
-      totalamount = totalamount + 300
-      setTotalamount(totalamount)
+    if (totalAmount <= 700) {
+      totalAmount = totalAmount + 300
+      setTotalamount(totalAmount)
       largePizza = largePizza + 1;
       setLargepizza(largePizza)
       adult = adult + 2;
@@ -120,16 +121,16 @@ function App() {
   const adultDecrement = () => {
     if (adult > 1) {
       adult = adult - 1;
-      if (mediumPizza >= 1 && totalamount >= 400) {
+      if (mediumPizza >= 1 && totalAmount >= 400) {
         mediumPizza = mediumPizza - 1;
-        totalamount = totalamount - 200;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount - 200;
+        setTotalamount(totalAmount)
       }
       else {
         largePizza = largePizza - 1;
         mediumPizza = mediumPizza + 1;
-        totalamount = totalamount - 100;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount - 100;
+        setTotalamount(totalAmount)
         setLargepizza(largePizza)
 
       }
@@ -139,16 +140,16 @@ function App() {
     }
   }
   const adultIncrement = () => {
-    if (totalamount <= 800) {
+    if (totalAmount <= 800) {
       adult = adult + 1;
       mediumPizza = mediumPizza + 1;
-      totalamount = totalamount + 200;
-      setTotalamount(totalamount)
+      totalAmount = totalAmount + 200;
+      setTotalamount(totalAmount)
       if (mediumPizza >= 2) {
         mediumPizza = mediumPizza - 2;
         largePizza = largePizza + 1;
-        totalamount = totalamount - 100;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount - 100;
+        setTotalamount(totalAmount)
         setLargepizza(largePizza)
       }
       setAdult(adult)
@@ -156,21 +157,21 @@ function App() {
     }
   }
   const childIncrement = () => {
-    if (totalamount <= 850) {
+    if (totalAmount <= 850) {
       smallPizza = smallPizza + 1;
       child = child + 1;
-      totalamount = totalamount + 150;
-      setTotalamount(totalamount)
+      totalAmount = totalAmount + 150;
+      setTotalamount(totalAmount)
       if (smallPizza >= 2) {
         mediumPizza = mediumPizza + 1;
-        totalamount = totalamount - 100;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount - 100;
+        setTotalamount(totalAmount)
         smallPizza = smallPizza - 2;
         if (mediumPizza >= 2) {
           largePizza = largePizza + 1;
           mediumPizza = mediumPizza - 2;
-          totalamount = totalamount - 100;
-          setTotalamount(totalamount)
+          totalAmount = totalAmount - 100;
+          setTotalamount(totalAmount)
           setLargepizza(largePizza)
         }
         setMediumpizza(mediumPizza)
@@ -185,22 +186,22 @@ function App() {
       child = child - 1;
       if (smallPizza >= 1) {
         smallPizza = smallPizza - 1;
-        totalamount = totalamount - 150;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount - 150;
+        setTotalamount(totalAmount)
       }
       else if (mediumPizza >= 1) {
         mediumPizza = mediumPizza - 1;
         smallPizza = smallPizza + 1;
-        totalamount = totalamount - 50;
+        totalAmount = totalAmount - 50;
 
-        setTotalamount(totalamount)
+        setTotalamount(totalAmount)
       }
       else if (largePizza >= 1) {
         largePizza = largePizza - 1;
         mediumPizza = mediumPizza + 1;
         smallPizza = smallPizza + 1;
-        totalamount = totalamount + 50;
-        setTotalamount(totalamount)
+        totalAmount = totalAmount + 50;
+        setTotalamount(totalAmount)
       }
       setMediumpizza(mediumPizza)
       setLargepizza(largePizza)
@@ -222,7 +223,8 @@ function App() {
         mediumpizzaIncrement={mediumpizzaIncrement}
         mediumpizzaDecrement={mediumpizzaDecrement}
         largepizzaIncrement={largepizzaIncrement}
-        largepizzaDecrement={largepizzaDecrement} />
+        largepizzaDecrement={largepizzaDecrement}
+       />
       <hr id="line1"></hr>
       <Adult
         adult={adult}
@@ -231,7 +233,7 @@ function App() {
       <hr id="line"></hr>
       <Children
         child={child}
-        totalamount={totalamount}
+        totalAmount={totalAmount}
         childIncrement={childIncrement}
         childDecrement={childDecrement}
 
