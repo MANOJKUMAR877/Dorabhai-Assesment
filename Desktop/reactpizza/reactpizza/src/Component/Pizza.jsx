@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPizzaSlice, faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 function Pizza() {
@@ -9,18 +9,18 @@ function Pizza() {
             <div className="container">
                 <div className="pizza">
 
-                    <div className="small-pizza">
-                        <FontAwesomeIcon icon={faPizzaSlice} id="xs" />
+                    <div className="small-pizza" >
+                        <FontAwesomeIcon icon={faPizzaSlice} id="xs" size="xs" />
                         <h3 id="small">SMALL</h3>
                     </div>
                     <div className="medium-pizza">
 
-                        <FontAwesomeIcon icon={faPizzaSlice} id="sm" size="2x" />
+                        <FontAwesomeIcon icon={faPizzaSlice} id="sm" size="1x" />
                         <h3 id="medium">MEDIUM</h3>
 
                     </div>
                     <div className="large-pizza">
-                        <FontAwesomeIcon icon={faPizzaSlice} id="lg" size="3x" />
+                        <FontAwesomeIcon icon={faPizzaSlice} id="lg" size="2x" />
                         <h3 id="large">LARGE</h3>
 
                     </div>
@@ -34,13 +34,9 @@ function Pizza() {
                     <h2><span id="mediumvalue">1</span></h2>
                     <h2><span id="largevalue">0</span></h2>
 
-                </div>
-                
-                
+</div>
+</div>
 
-
-
-            </div>
                 </div>
                 );
             }

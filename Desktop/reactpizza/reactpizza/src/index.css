@@ -26,7 +26,7 @@ button:disabled
   height: 400px;
  
   position: relative;
-  left: 20px;
+  left: 1px;
   top: 100px;
   
 }
@@ -70,7 +70,7 @@ button:disabled
 #sm{
   position: absolute;
   left:225px;
-  top:42px;
+  top:49px;
 }
 #lg{
   position: absolute;
@@ -123,13 +123,13 @@ button:disabled
 }
 #mediumvalue{
   position: absolute;
-  top: 58px;
+  top: 51px;
   left: 509px;
 
 }
 #largevalue{
   position: absolute;
-  top: 109px;
+  top: 100px;
   left: 509px;
 }
 
@@ -150,7 +150,8 @@ button:disabled
   position: absolute;;
   left: 446px;
   top: 4px;
-
+   border: none;
+   background-color: white;
   color:rgb(81, 81, 185);
   display:inline-block;
 
@@ -159,67 +160,123 @@ button:disabled
   position: absolute;
   left: 542px;
   top: 4px;
-
+  border: none;
+  background-color: white;
   color: red;
   display: inline-block;
 }
 #medium-minus{
   position: absolute;
   left: 446px;
-  top:55px;
+  top:50px;
   color:rgb(81, 81, 185);
+  border: none;
+   background-color: white;
   display: inline-block;
 }
 #medium-plus{
   position: absolute;
   left: 542px;
-  top:55px;
+  top:50px;
+  border: none;
+   background-color: white;
   color: red;
   display: inline-block;
 }
 #large-minus{
   position: absolute;
   left: 446px;
-  top:105px;
+  top:97px;
+  border: none;
+   background-color: white;
   color:rgb(81, 81, 185);
   display: inline-block;
 }
 #large-plus{
   position: absolute;
   left: 542px;
-  top:105px;
+  top:97px;
+  border: none;
+   background-color: white;
   color: red;
   display: inline-block;
 }
 #adult-minus{
   position: absolute;
-  left: 501px;
-    bottom: 100px;
+  left: 368px;
+  bottom: 20px;
+  background-color: white;
+  border: none;
     color:rgb(81, 81, 185);
   display: inline-block;
 }
 #adult-plus{
   position: absolute;
-  left: 582px;
-  bottom:100px;
+  left: 465px;
+  bottom:19px;
+  background-color: white;
+  border: none;
   color: red;
   display: inline-block;
 }
 #child-minus{
   position: absolute;
-  left: 501px;
-  bottom:7px;
+  left: 448px;
+  bottom: 41px;
+  background-color: white;
+  border: none;
+
   color:rgb(81, 81, 185);
   display: inline-block;
 }
 #child-plus{
   position: absolute;
-  left: 582px;
-  bottom:7px;
+  left: 542px;
+  bottom: 40px;
+  background-color: white;
+  border: none;
+
   color: red;
   display: inline-block;
  
 }
 #small-pizza{
   display:inline-block;
+}
+#adult-icon{
+  position: absolute;
+  left: 80px;
+  top: 315px;
+color:rgb(81, 81, 185);
+}
+#adult-value{
+  position: absolute;
+  top: -22px;
+  left: 41px;
+
+}
+#adultvalues{
+  
+  position: absolute;
+  left: 432px;
+  top: 4px;
+
+}
+#child-icon{
+  position: relative;
+  left: -207px;
+  bottom: -28px;
+  color:rgb(81, 81, 185);
+}
+#child-value{
+  position: absolute;
+  left: 118px;
+    bottom: 12px;
+    color:rgb(81, 81, 185);
+}
+#childvalues{
+  position: relative;
+  top: -21px;
+  left: 216px;
+  color:rgb(81, 81, 185);
 }
