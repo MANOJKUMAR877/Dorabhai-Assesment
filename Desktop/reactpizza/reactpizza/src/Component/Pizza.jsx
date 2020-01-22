@@ -23,11 +23,11 @@ const Pizza = (props) => {
 
                     </div>
                     <button id="small-minus" onClick={props.smallpizzaDecrement} disabled={props.smallPizza === 0}> <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
-                    <button id="small-plus" onClick={props.smallpizzaIncrement} disabled={props.totalAmount + 150 >= 1000}><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
+                    <button id="small-plus" onClick={props.smallpizzaIncrement} ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
                     <button id="medium-minus" onClick={props.mediumpizzaDecrement}  disabled={(props.mediumPizza === 0 && props.largePizza > 0) || (props.mediumPizza === 1 && props.largePizza === 0)} > <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
-                    <button id="medium-plus" onClick={props.mediumpizzaIncrement}  disabled={props.totalAmount + 200 > 1000}><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
+                    <button id="medium-plus" onClick={props.mediumpizzaIncrement}  ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
                     <button id="large-minus" onClick={props.largepizzaDecrement} disabled={(props.largePizza === 0 && props.mediumPizza > 0) || (props.largePizza === 1 && props.mediumPizza === 0)}> <FontAwesomeIcon icon={faMinusCircle} size="2x" /></button>
-                    <button id="large-plus" onClick={props.largepizzaIncrement} disabled={props.totalAmount + 300 > 1000} ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
+                    <button id="large-plus" onClick={props.largepizzaIncrement}  ><FontAwesomeIcon icon={faPlusCircle} size="2x" /></button>
                     <h2><span id="smallvalue">{props.smallPizza}</span></h2>
                     <h2><span id="mediumvalue">{props.mediumPizza}</span></h2>
                     <h2><span id="largevalue">{props.largePizza}</span></h2>

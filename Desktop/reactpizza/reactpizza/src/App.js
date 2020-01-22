@@ -53,6 +53,20 @@ function App() {
       setSmallpizza(smallPizza)
       setLargepizza(largePizza)
     }
+    if(totalAmount>=950 )
+    {
+      smallPizza=0
+      child=child+1
+      totalAmount=totalAmount-50
+      mediumPizza=0
+      largePizza=largePizza+1
+      setChild(child)
+      setSmallpizza(smallPizza)
+      setLargepizza(largePizza)
+      setTotalamount(totalAmount)
+      setMediumpizza(mediumPizza)
+    }
+  
   }
   const mediumpizzaDecrement = () => {
     if (totalAmount >= 400 && mediumPizza > 0) {
@@ -180,6 +194,7 @@ function App() {
       setAdult(adult)
       setSmallpizza(smallPizza)
     }
+
   }
   const childDecrement = () => {
     if (child > 0) {
@@ -208,6 +223,7 @@ function App() {
       setSmallpizza(smallPizza)
       setChild(child)
     }
+    
   }
 
   return (
