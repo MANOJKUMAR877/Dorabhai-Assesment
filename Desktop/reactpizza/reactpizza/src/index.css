@@ -11,7 +11,7 @@ button:disabled
 }
 #heading{
   
-  color:rgb(27, 86, 197);
+  color:rgb(81, 81, 185);
   font-size:35px;
   position: absolute;
   top: 63px;
@@ -58,7 +58,7 @@ button:disabled
 }
 .pizza{
  
-  color: rgb(27, 86, 197);
+  color:rgb(81, 81, 185);
   position: relative;
 
 }
@@ -83,13 +83,14 @@ button:disabled
   padding-top: 36px;
   padding-left:10px ;
   font-size: 22px;
-  color: rgb(27, 86, 197);
+  
+  color:rgb(81, 81, 185);
 }
 .child{
     
   padding-bottom: 15px;
   padding-left:8px ;
-  color:rgb(27, 86, 197);
+  color:rgb(81, 81, 185);
   position:absolute;
   font-size: 22px;
   top:340px;
@@ -99,7 +100,7 @@ button:disabled
   position: absolute;
   top:380px;
   left:100px;
-  color: rgb(27, 86, 197);
+  color:rgb(81, 81, 185);
 }
 
 .total{

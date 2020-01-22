@@ -19,6 +19,23 @@ function App() {
   let adult = adultCount
   let child = childCount
   let totalAmount = totalamountCount
+  const value={
+    maximiumAmount:950
+  }
+  const color=()=>
+  {
+    if(largePizza===3 && totalAmount===900)
+    {
+      return true
+    }
+  }
+  const colorLarge=()=>
+  {
+    if(totalAmount>=750)
+    {
+      return true
+    }
+  }
 
   const smallpizzaDecrement = () => {
     if (smallPizza > 0 && totalAmount >= 350) {
@@ -53,28 +70,14 @@ function App() {
       setSmallpizza(smallPizza)
       setLargepizza(largePizza)
     }
-    if(totalAmount>=950 )
-    {
-      smallPizza=0
-      child=child+1
-      totalAmount=totalAmount-50
-      mediumPizza=0
-      largePizza=largePizza+1
-      setChild(child)
-      setSmallpizza(smallPizza)
-      setLargepizza(largePizza)
-      setTotalamount(totalAmount)
-      setMediumpizza(mediumPizza)
-    }
-  
-  }
+}
   const mediumpizzaDecrement = () => {
     if (totalAmount >= 400 && mediumPizza > 0) {
       mediumPizza = mediumPizza - 1;
       setMediumpizza(mediumPizza)
       totalAmount = totalAmount - 200;
       setTotalamount(totalAmount)
-      if (adult >= 1) {
+      if (adult > 1) {
         adult = adult - 1;
       }
       else {
@@ -82,7 +85,6 @@ function App() {
       }
       setAdult(adult)
       setChild(child)
-
     }
   }
   const mediumpizzaIncrement = () => {
@@ -146,11 +148,9 @@ function App() {
         totalAmount = totalAmount - 100;
         setTotalamount(totalAmount)
         setLargepizza(largePizza)
-
       }
       setAdult(adult)
       setMediumpizza(mediumPizza)
-
     }
   }
   const adultIncrement = () => {
@@ -194,7 +194,6 @@ function App() {
       setAdult(adult)
       setSmallpizza(smallPizza)
     }
-
   }
   const childDecrement = () => {
     if (child > 0) {
@@ -223,9 +222,8 @@ function App() {
       setSmallpizza(smallPizza)
       setChild(child)
     }
-    
-  }
 
+  }
   return (
     <div className="App">
       <i id="heading"><FontAwesomeIcon icon={faShoppingCart} />Order Pizza </i>
@@ -233,28 +231,32 @@ function App() {
         smallPizza={smallPizza}
         mediumPizza={mediumPizza}
         largePizza={largePizza}
-        
         smallpizzaIncrement={smallpizzaIncrement}
         smallpizzaDecrement={smallpizzaDecrement}
         mediumpizzaIncrement={mediumpizzaIncrement}
         mediumpizzaDecrement={mediumpizzaDecrement}
         largepizzaIncrement={largepizzaIncrement}
         largepizzaDecrement={largepizzaDecrement}
-       />
+        maximiumAmount={value.maximiumAmount}
+        totalAmount={totalAmount}
+        color={color}
+        colorLarge={colorLarge}/>
       <hr id="line1"></hr>
       <Adult
         adult={adult}
         adultDecrement={adultDecrement}
-        adultIncrement={adultIncrement} />
+        adultIncrement={adultIncrement} 
+        maximiumAmount={value.maximiumAmount}
+        totalAmount={totalAmount}
+        color={color}/>
       <hr id="line"></hr>
       <Children
         child={child}
         totalAmount={totalAmount}
         childIncrement={childIncrement}
         childDecrement={childDecrement}
-
-
-      />
+        maximiumAmount={value.maximiumAmount}
+        color={color} />
     </div>
   );
 }
