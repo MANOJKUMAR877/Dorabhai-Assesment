@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: 'Pacifico', cursive;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url("home-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.main-header {
+  text-align: center;
+  transition: 0.5s;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.main-header h1 {
+  font-size: 3em;
+  font-family: var(--main-font);
+  color: #5F5F80;
+  margin: 20px;
+}
+
+-header hr {
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  background: #E1F06C;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.main-header h3 {
+  margin: 20px0;
+  font-size: 2rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.main-header input {
+  width: 90%;
+  padding: 1rem;
+  margin: 20px 0px;
+  border: none;
+  border-bottom: 2px solid #5F5F80;
+  font-size: 1.3rem;
+  background: transparent;
+  outline: none;
+}
+
+
+.main-header button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background: #80A2Ef;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 1.2s;
+  margin: 20px;
+  outline: none;
+}
+
+.main-header button:hover {
+  transform: scale(1.2);
+}
+
+.main-header:hover {
+  -webkit-box-shadow: -10px 0px 44px 7px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: -10px 0px 44px 7px rgba(170, 80, 80, 0.54);
+  box-shadow: -10px 0px 44px 7px rgba(0, 0, 0, 0.54);
+} 
