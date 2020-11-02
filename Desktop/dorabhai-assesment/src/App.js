@@ -1,46 +1,20 @@
 import React, { Component } from 'react'
-import './App.css'
+import { BrowserRouter, Route } from 'react-router-dom'
+import LoginPage from './pages/LoginPage'
+import Dashboard from './pages/Dashboard'
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      username: '',
-      password: ''
-    }
-  }
 
-  clicked = () => {
-    console.log(this.state.username + this.state.password);
-    fetch('http://65.0.14.105/API/admin/adminLogin.php', {
-      method: "post",
-      body: JSON.stringify(this.state)
-    }).then((response) => {
-      response.json().then((result) => {
-        console.log("result", result)
-      })
-    })
-  }
 
   render() {
     return (
+      <BrowserRouter>
+
+        <Route path="/" component={LoginPage} exact={true} />
+        <Route path="/dashboard" component={Dashboard} />
 
 
-      <div className="main">
-
-        <div className="main-header">
-          <h1>Login Form</h1>
-          <hr />
-          <h3>Welcome to Login</h3>
-          <p><input type="text" placeholder="username" onChange={(e) => { this.setState({ username: e.target.value }) }} /></p>
-          <p><input type="password" placeholder="password" onChange={(e) => { this.setState({ password: e.target.value }) }} /></p>
-          <p><button onClick={this.clicked}>continue</button></p>
-        </div>
-
-      </div>
-
-
+      </BrowserRouter>
     )
   }
 }
-
-export default App
+export default App;

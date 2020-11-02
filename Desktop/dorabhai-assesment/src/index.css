@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+@import '~antd/dist/antd.css';
 
 :root {
   --main-font: 'Pacifico', cursive;
@@ -96,3 +97,28 @@
   -moz-box-shadow: -10px 0px 44px 7px rgba(170, 80, 80, 0.54);
   box-shadow: -10px 0px 44px 7px rgba(0, 0, 0, 0.54);
 } 
+
+#components-layout-demo-custom-trigger .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.site-layout-background{
+  height: 100%;
+}
+.form-input{
+  padding: 3px;
+  margin: 10px;
+}
