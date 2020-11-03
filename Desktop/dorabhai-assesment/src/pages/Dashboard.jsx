@@ -1,4 +1,4 @@
-import { Layout, Menu, Breadcrumb, Input } from 'antd';
+import { Layout, Menu, Breadcrumb } from 'antd';
 import AddUserForm from '../components/AddUserForm';
 import {
 
@@ -14,7 +14,7 @@ class DashBoard extends Component {
     state = {
         collapsed: false,
         addUser: false,
-        allUser: false
+        allUser: true
     };
 
     onCollapse = collapsed => {

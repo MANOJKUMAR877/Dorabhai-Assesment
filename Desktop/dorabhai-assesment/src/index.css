@@ -118,7 +118,10 @@
 .site-layout-background{
   height: 100%;
 }
-.form-input{
+.form-input {
   padding: 3px;
+  margin: 10px;
+}
+.ant-dropdown-link{
   margin: 10px;
 }
